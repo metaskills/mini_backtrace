@@ -1,12 +1,12 @@
 
 = MiniBacktrace
 
-A minimal backtrace filter for MiniTest::Unit & Rails. If you have been using Rails 3 with Ruby 1.9, that means your base test library is MiniTest::Unit. But since Rails 3 there have been no backtrace silencers included in ActiveSupport for the ActiveSupport::BacktraceCleaner (aka Rails.backtrace_cleaner) to hook into MiniTest::Unit. That means noisy tests.
+MiniBacktrace allows you to take advantage of the Rails.backtrace_cleaner when using MiniTest. This includes everyone using Rails 3 with Ruby 1.9.
 
 
 = Usage
 
-Just add 'mini_backtrace' to your Gemfile's :test group and your should automatically see a huge difference. Any additions to the Rails.backtrace_cleaner should now also work.
+Just add 'mini_backtrace' to your Gemfile's :test group and your should automatically see a huge difference. Any additions to the Rails.backtrace_cleaner should now work.
 
   Rails.backtrace_cleaner.add_silencer { |line| line =~ /my_noisy_library/ }
 

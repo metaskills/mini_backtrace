@@ -9,8 +9,8 @@ Gem::Specification.new do |s|
   s.authors     = ['Ken Collins']
   s.email       = ['ken@metaskills.net']
   s.homepage    = 'http://github.com/metaskills/mini_backtrace'
-  s.summary     = 'MiniBacktrace - A minimal backtrace filter for MiniTest::Unit & Rails.'
-  s.description = 'MiniBacktrace - A minimal backtrace filter for MiniTest::Unit & Rails.'
+  s.summary     = 'Integrates the Rails.backtrace_cleaner with MiniTest.'
+  s.description = 'MiniBacktrace allows you to take advantage of the Rails.backtrace_cleaner when using MiniTest. This includes everyone using Rails 3 with Ruby 1.9.'
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
